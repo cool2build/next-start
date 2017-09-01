@@ -1,13 +1,16 @@
-import fs from 'fs';
-import path from 'path';
-import Sequelize from 'sequelize';
-import _ from 'lodash';
-import config from '../config/default';
+const fs = require('fs');
+const path = require('path');
+const Sequelize = require('sequelize');
+const _ = require('lodash');
+const config = require('config')['sequelize'];
 
 let db = {};
 
 // TODO - per-environment config
-const sequelize = new Sequelize(config.postgres, { maxConcurrentQueries: 100 });
+const sequelize = new Sequelize(config.database, config.user, config.password, { 
+  host: config.host,
+  dialect: 'postgres' 
+});
 
 fs
   .readdirSync(__dirname)

@@ -1,46 +1,51 @@
 {
+  "name": "no-line",
+  "license": "MIT",
   "version": "1.0.0",
   "dependencies": {
     "babel-eslint": "^7.2.3",
-    "babel-preset-latest": "^6.16.0",
-    "babel-preset-react": "^6.16.0",
-    "bcryptjs": "^2.4.0",
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "crypto": "^0.0.3",
-    "express": "^4.14.0",
-    "express-session": "^1.14.2",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "colors": "^1.1.2",
+    "config": "^1.26.2",
+    "connect-redis": "^3.3.0",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
     "lodash": "^4.17.4",
     "material-ui": "^0.19.0",
-    "next": "^2.0.0-beta.16",
-    "passport": "^0.3.2",
-    "pg": "^6.1.2",
-    "prettier-eslint": "^6.4.2",
-    "react-bootstrap": "^0.30.7",
-    "react-motion": "^0.4.7",
-    "react-redux": "^5.0.1",
+    "next": "^3.2.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "pg": "^7.2.0",
+    "prettier-eslint": "^7.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-motion": "^0.5.1",
+    "react-redux": "^5.0.6",
     "react-tap-event-plugin": "^2.0.1",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0",
+    "redis": "^2.8.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "semantic-ui-react": "^0.72.0",
-    "sendgrid": "^4.7.1",
-    "sequelize": "^3.29.0",
-    "sequelize-cli": "^2.5.1",
-    "slate": "^0.16.8"
+    "sendgrid": "^5.2.3",
+    "sequelize": "^4.8.0",
+    "sequelize-cli": "^2.8.0",
+    "slate": "^0.21.4"
   },
   "scripts": {
-    "start": "NODE_ENV=production node api/index.js",
-    "dev": "node api/index.js",
+    "start": "NODE_ENV=production node api",
+    "dev": "node api",
     "build": "next build"
   },
   "devDependencies": {
-    "babel-preset-stage-0": "^6.16.0"
+    "babel-preset-stage-0": "^6.24.1"
   },
   "babel": {
-    "presets": [
-      "latest",
-      "react"
-    ],
     "plugins": [
       "transform-runtime"
     ]

@@ -1,6 +1,8 @@
 {
   "presets": [
     "next/babel",
+    "latest",
+    "react",
     "stage-0"
-  ],
+  ]
 }
