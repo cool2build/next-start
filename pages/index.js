@@ -4,7 +4,6 @@ import reducer from "../reducers/index";
 import Nav from "../components/nav/nav";
 import { Sidebar, Segment, Menu, Header } from 'semantic-ui-react';
 
-
 class Index extends React.Component {
   static async getInitialProps({ req }) {
     const isServer = !!req;

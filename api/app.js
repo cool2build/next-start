@@ -7,7 +7,6 @@ const middleware = require('./middleware');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
-
 const port = process.env.PORT || 3000;
 
 app.prepare()
@@ -24,5 +23,4 @@ app.prepare()
     server.listen(port, () => console.log(`listening on port ${port}`));
   })
   .catch(err => console.log(err));
-
 

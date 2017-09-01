@@ -11,13 +11,19 @@ Session.vim
 tags.temp
 yarn-error.log
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f761961bfc8441f7b0280cd643e4dfd6bb19fdb0
 
 # build file
 .next
 
 # config
+<<<<<<< HEAD
 =======
 .next
 >>>>>>> added LRUCache and re-configured server
+=======
+>>>>>>> f761961bfc8441f7b0280cd643e4dfd6bb19fdb0
 config/development.json
 config/production.json
