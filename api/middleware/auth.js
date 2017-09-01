@@ -16,5 +16,9 @@ module.exports.verify = (req, res, next) => {
   if (req.isAuthenticated()) {
     return next();
   }
+<<<<<<< HEAD
   res.redirect('/signin');
+=======
+  res.redirect('/auth/login');
+>>>>>>> added passport with facebook
 };

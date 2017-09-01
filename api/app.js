@@ -3,7 +3,10 @@ const bodyParser = require('body-parser');
 const config = require('config');
 const next = require('next');
 const middleware = require('./middleware');
+<<<<<<< HEAD
 const routes = require('./routes');
+=======
+>>>>>>> added passport with facebook
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -18,7 +21,10 @@ app.prepare()
     server.use(middleware.passport.initialize());
     server.use(middleware.passport.session());
 
+<<<<<<< HEAD
     // pages endpoint
+=======
+>>>>>>> added passport with facebook
     server.get('/', (req, res) => app.render(req, res, '/', req.query));
     server.get('/signin', (req, res) => app.render(req, res, '/signin', req.query));
 

@@ -7,6 +7,7 @@
     "host": "localhost",
     "port": 5432
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
 
   "redis": {},
@@ -18,4 +19,9 @@
 =======
   }
 >>>>>>> added LRUCache and re-configured server
+=======
+  },
+
+  "redis": {}
+>>>>>>> added passport with facebook
 }
