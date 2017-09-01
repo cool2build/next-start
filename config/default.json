@@ -6,6 +6,7 @@
     "password": "",
     "host": "localhost",
     "port": 5432
+<<<<<<< HEAD
   },
 
   "redis": {},
@@ -14,4 +15,7 @@
     "facebook": {}
   }
 
+=======
+  }
+>>>>>>> added LRUCache and re-configured server
 }

@@ -9,9 +9,13 @@
     "babel-register": "^6.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
+<<<<<<< HEAD
     "colors": "^1.1.2",
     "config": "^1.26.2",
     "connect-redis": "^3.3.0",
+=======
+    "config": "^1.26.2",
+>>>>>>> added LRUCache and re-configured server
     "cors": "^2.8.4",
     "crypto": "^1.0.1",
     "express": "^4.15.4",
@@ -21,15 +25,25 @@
     "material-ui": "^0.19.0",
     "next": "^3.2.1",
     "passport": "^0.4.0",
+<<<<<<< HEAD
     "passport-facebook": "^2.1.1",
     "pg": "^7.2.0",
     "prettier-eslint": "^7.1.0",
     "react": "^15.6.1",
+=======
+    "pg": "^7.2.0",
+    "prettier-eslint": "^7.1.0",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
+>>>>>>> added LRUCache and re-configured server
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.1",
     "react-redux": "^5.0.6",
     "react-tap-event-plugin": "^2.0.1",
+<<<<<<< HEAD
     "redis": "^2.8.0",
+=======
+>>>>>>> added LRUCache and re-configured server
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "semantic-ui-react": "^0.72.0",
@@ -39,8 +53,13 @@
     "slate": "^0.21.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "NODE_ENV=production node api",
     "dev": "node api",
+=======
+    "start": "NODE_ENV=production node api/index.js",
+    "dev": "nodemon api/index.js",
+>>>>>>> added LRUCache and re-configured server
     "build": "next build"
   },
   "devDependencies": {

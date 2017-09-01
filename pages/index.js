@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import { Provider } from 'react-redux';
 import { initStore } from '../reducers/index';
 import reducer from '../reducers/index';
 import Layout from '../components/layout/layout';
+=======
+import { Provider } from "react-redux";
+import reducer from "../reducers/index";
+import { initStore } from "../reducers/index";
+import Nav from "../components/nav";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+>>>>>>> added LRUCache and re-configured server
 
 class Index extends React.Component {
   // static async getInitialProps({ req }) {
