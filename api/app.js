@@ -1,10 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('config');
-const session = require('express-session');
 const next = require('next');
-const user = require('./user');
-const db = require('../models');
+const middleware = require('./middleware');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -14,6 +12,10 @@ const port = process.env.PORT || 3000;
 app.prepare()
   .then(() => {
     const server = express();
+
+    server.use(middleware.auth.session);
+    server.use(middleware.passport.initialize());
+    server.use(middleware.passport.session());
 
     server.get('/', (req, res) => app.render(req, res, '/', req.query));
     server.get('*', handle);
