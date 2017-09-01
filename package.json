@@ -7,6 +7,7 @@
     "babel-register": "^6.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
+    "colors": "^1.1.2",
     "config": "^1.26.2",
     "cors": "^2.8.4",
     "crypto": "^1.0.1",
@@ -35,12 +36,14 @@
   },
   "scripts": {
     "start": "NODE_ENV=production node api/index.js",
-    "dev": "nodemon api/index.js",
+    "dev": "node api/index.js",
     "build": "next build"
   },
   "devDependencies": {
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-plugin-react": "^7.3.0"
   },
+  "license": "MIT",
   "babel": {
     "plugins": [
       "transform-runtime"

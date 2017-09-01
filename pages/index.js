@@ -1,19 +1,10 @@
 import { Provider } from "react-redux";
-import reducer from "../reducers/index";
 import { initStore } from "../reducers/index";
-import Nav from "../components/nav";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import reducer from "../reducers/index";
+import Nav from "../components/nav/nav";
+import { Sidebar, Segment, Menu, Header } from 'semantic-ui-react';
 
-// import injectTapEventPlugin from "react-tap-event-plugin";
-// if (typeof window !== "undefined") {
-//   injectTapEventPlugin();
-// }
-
-// const muiDefaultTheme = {
-//   userAgent: false
-// };
-
-export default class Index extends React.Component {
+class Index extends React.Component {
   static async getInitialProps({ req }) {
     const isServer = !!req;
     const store = initStore(reducer, null, isServer);
@@ -26,25 +17,51 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props);
     this.store = initStore(reducer, props.initialState, props.isServer);
+
+    this.state = {
+      showSidebar: false
+    };
+
+    this.toggleSidebar = this.toggleSidebar.bind(this);
+  }
+
+  toggleSidebar() {
+    this.setState({ showSidebar: !this.state.showSidebar });
   }
 
   render() {
     return (
-      <div id="main">
-        <div id="firebaseui-auth-container" />
-        <Provider store={this.store}>
-          <MuiThemeProvider muiTheme={{ userAgent: this.props.userAgent }}>
-            <Nav />
-          </MuiThemeProvider>
-        </Provider>
-        <style>{`
-          #main {
-            {/* display: flex; */}
-            align-items: center;
-            justify-content: center;
-          }
-        `}</style>
-      </div>
+      <Provider store={this.store}>
+        <div id="main">
+          <Nav toggleSidebar={this.toggleSidebar}/>
+          <Sidebar.Pushable>
+            <Sidebar
+              as={Menu}
+              animation='slide along'
+              visible={this.state.showSidebar}
+              vertical
+              inverted
+              width='thin'
+            >
+              <Menu.Item>Order</Menu.Item>
+              <Menu.Item>History</Menu.Item>
+              <Menu.Item>Setting</Menu.Item>
+              <Menu.Item>About</Menu.Item>
+            </Sidebar>
+            <Sidebar.Pusher>
+              <Segment 
+                inverted
+                color='grey'
+                style={{height: '100vh', borderRadius: 0}}
+              >
+                <Header as='h3'>Application Content</Header>
+              </Segment>
+            </Sidebar.Pusher>
+          </Sidebar.Pushable>
+        </div>
+      </Provider>
     );
   }
 }
+
+export default Index;
