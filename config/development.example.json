@@ -8,10 +8,15 @@
     "port": 5432
   },
 
-  "redis": {},
+  "redis": {
+    "host": "localhost"
+  },
 
   "passport": {
-    "facebook": {}
+    "facebook": {
+      "clientID": "FILLE_ME_IN",
+      "clientSecret": "FILL_ME_IN",
+      "callbackURL": "FILL-ME-IN"
+    }
   }
-
 }
