@@ -1,4 +1,4 @@
-export default (db, DataTypes) => {
+module.exports = (db, DataTypes) => {
   const Session = db.define('Session', {
     session_id: {
       type: DataTypes.STRING,

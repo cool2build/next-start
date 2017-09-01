@@ -1,46 +1,49 @@
-import http from 'http';
-import express from 'express';
-import cors from 'cors';
-import bodyParser from 'body-parser';
-import db from '../models';
-//const db = {};
-//import middleware from './middleware';
-import config from '../config/default';
-import session from 'express-session';
-import next from 'next';
-import user from './user';
+const express = require('express');
+const bodyParser = require('body-parser');
+const config = require('config');
+const session = require('express-session');
+const next = require('next');
+const user = require('./user');
+const db = require('../models');
 
 const dev = process.env.NODE_ENV !== 'production'
-const nextApp = next({ dir: '.', dev, quiet: false })
-const handle = nextApp.getRequestHandler()
+const app = next({ dir: '.', dev, quiet: false })
+const handle = app.getRequestHandler();
+const middleware = require('./middleware');
+const port = process.env.PORT || 3000;
 
-nextApp.prepare()
+app.prepare()
   .then(() => {
-    let app = express();
-    app.server = http.createServer(app);
+    const server = express();
 
-    app.use(cors({
-      exposedHeaders: config.corsHeaders
-    }));
+    server.get('/', (req, res) => middleware.renderAndCache(app, req, res, '/'));
 
-    app.use(bodyParser.json({
-      limit : config.bodyLimit
-    }));
+    server.get('*', handle);
+  //   let app = express();
+  //   app.server = http.createServer(app);
 
-    // internal middleware
-    //app.use(middleware({ config, db  }));
+  //   app.use(cors({
+  //     exposedHeaders: config.corsHeaders
+  //   }));
 
-    // api router
-    user(app, config, db); //This is the extra line
+  //   app.use(bodyParser.json({
+  //     limit : config.bodyLimit
+  //   }));
 
-    app.get('*', (req, res) => handle(req, res))
+  //   // internal middleware
+  //   //app.use(middleware({ config, db  }));
 
-    app.server.listen(process.env.PORT || config.port);
+  //   // api router
+  //   user(app, config, db); //This is the extra line
 
-    console.log(`Started on port ${app.server.address().port}`);
-  })
-  .catch(err => {
-    console.log(err.stack);
+  //   app.get('*', (req, res) => handle(req, res))
+
+  //   app.server.listen(process.env.PORT || config.port);
+
+  //   console.log(`Started on port ${app.server.address().port}`);
+  // })
+  // .catch(err => {
+  //   console.log(err.stack);
+    server.listen(port, () => console.log(`listening on port ${port}`));
   });
 
-export default nextApp;

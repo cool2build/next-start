@@ -1,8 +1,7 @@
-export default function(app) {
+// export default function(app) {
 
-  app.get('/users', (req, res) => {
-    res.write("Hello world");
-    res.end();
-  });
-
-}
+//   app.get('/users', (req, res) => {
+//     res.write("Hello world");
+//     res.end();
+//   });
+// }

@@ -1,0 +1,10 @@
+{
+  "sequelize": {
+    "client": "postgres",
+    "database": "no-line",
+    "user": "",
+    "password": "",
+    "host": "localhost",
+    "port": 5432
+  }
+}
