@@ -79,6 +79,6 @@
     "react/wrap-multilines": 1,
     "babel/object-curly-spacing": 0,
     "babel/arrow-parens": 0,
-    "react/react-in-jsx-scope": 2,
+    "react/react-in-jsx-scope": 2
   }
 }
