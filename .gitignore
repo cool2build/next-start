@@ -10,10 +10,6 @@ tags.lock
 Session.vim
 tags.temp
 yarn-error.log
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> updated package.json and eslintrc
 
 # build file
 .next
@@ -24,8 +20,3 @@ config/production.json
 
 # database
 database
-=======
-.next
-config/development.json
-config/production.json
->>>>>>> added LRUCache and re-configured server
