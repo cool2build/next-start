@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import { Editor, Raw } from 'slate';
 import { connect } from 'react-redux';
+=======
+import React from "react";
+import { Editor, Raw } from "slate";
+import { connect } from "react-redux";
+>>>>>>> updated package.json and eslintrc
 import { Menu } from 'semantic-ui-react';
 import BurgerMenu from './burgerMenu/burgerMenu';
 import { navStyle } from './navStyle';

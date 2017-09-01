@@ -11,6 +11,9 @@ Session.vim
 tags.temp
 yarn-error.log
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> updated package.json and eslintrc
 
 # build file
 .next

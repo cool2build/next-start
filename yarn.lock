@@ -165,10 +165,13 @@ array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
 
+<<<<<<< HEAD
 array-slice@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-1.0.0.tgz#e73034f00dcc1f40876008fd20feae77bd4b7c2f"
 
+=======
+>>>>>>> updated package.json and eslintrc
 array-union@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-1.0.2.tgz#9a34410e4f4e3da23dea375be5be70f24778ec39"
@@ -1081,7 +1084,18 @@ babel-runtime@6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
+<<<<<<< HEAD
 babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.25.0, babel-runtime@^6.26.0:
+=======
+babel-runtime@^6.0.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0:
+  version "6.20.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.10.0"
+
+babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.25.0, babel-runtime@^6.26.0:
+>>>>>>> updated package.json and eslintrc
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -1980,7 +1994,11 @@ error-stack-parser@^2.0.0:
   dependencies:
     stackframe "^1.0.3"
 
+<<<<<<< HEAD
 es5-ext@^0.10.12, es5-ext@^0.10.14, es5-ext@^0.10.30, es5-ext@^0.10.9, es5-ext@~0.10.14, es5-ext@~0.10.2:
+=======
+es5-ext@^0.10.12, es5-ext@^0.10.14, es5-ext@^0.10.30, es5-ext@^0.10.9, es5-ext@~0.10.14:
+>>>>>>> updated package.json and eslintrc
   version "0.10.30"
   resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.30.tgz#7141a16836697dbabfaaaeee41495ce29f52c939"
   dependencies:
@@ -3384,7 +3402,10 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> updated package.json and eslintrc
 
 junk@^1.0.1:
   version "1.0.3"
@@ -3652,13 +3673,6 @@ lru-cache@^3.2.0:
     pseudomap "^1.0.1"
 
 lru-cache@^4.0.1, lru-cache@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
-  dependencies:
-    pseudomap "^1.0.2"
-    yallist "^2.1.2"
-
-lru-cache@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
   dependencies:
@@ -4179,12 +4193,18 @@ oauth-sign@~0.8.1:
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> updated package.json and eslintrc
 oauth@0.9.x:
   version "0.9.15"
   resolved "https://registry.yarnpkg.com/oauth/-/oauth-0.9.15.tgz#bd1fefaf686c96b75475aed5196412ff60cfb9c1"
 
+<<<<<<< HEAD
 =======
 >>>>>>> added LRUCache and re-configured server
+=======
+>>>>>>> updated package.json and eslintrc
 object-assign@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
@@ -4684,6 +4704,7 @@ prop-types-exact@^1.1.1:
     has "^1.0.1"
     object.assign "^4.0.4"
 
+<<<<<<< HEAD
 prop-types-extra@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prop-types-extra/-/prop-types-extra-1.0.1.tgz#a57bd4810e82d27a3ff4317ecc1b4ad005f79a82"
@@ -4700,6 +4721,8 @@ prop-types-exact@^1.1.1:
 
 =======
 >>>>>>> added LRUCache and re-configured server
+=======
+>>>>>>> updated package.json and eslintrc
 prop-types@15.5.10, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
@@ -4722,7 +4745,7 @@ prr@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
 
-pseudomap@^1.0.1, pseudomap@^1.0.2:
+pseudomap@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
@@ -4806,6 +4829,7 @@ rc@^1.1.7:
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 react-bootstrap@^0.31.2:
   version "0.31.2"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-0.31.2.tgz#f59184676ecedfc4c572d29ffdd6f9126ea8fe6a"
@@ -4823,6 +4847,8 @@ react-bootstrap@^0.31.2:
     warning "^3.0.0"
 >>>>>>> added LRUCache and re-configured server
 
+=======
+>>>>>>> updated package.json and eslintrc
 react-deep-force-update@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.1.1.tgz#8ea4263cd6455a050b37445b3f08fd839d86e909"
@@ -4865,6 +4891,7 @@ react-motion@^0.5.1:
     raf "^3.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 react-portal@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-3.1.0.tgz#865c44fb72a1da106c649206936559ce891ee899"
@@ -4879,12 +4906,15 @@ react-overlays@^0.7.0:
     react-prop-types "^0.4.0"
     warning "^3.0.0"
 
+=======
+>>>>>>> updated package.json and eslintrc
 react-portal@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-3.1.0.tgz#865c44fb72a1da106c649206936559ce891ee899"
   dependencies:
     prop-types "^15.5.8"
 
+<<<<<<< HEAD
 react-prop-types@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/react-prop-types/-/react-prop-types-0.4.0.tgz#f99b0bfb4006929c9af2051e7c1414a5c75b93d0"
@@ -4892,6 +4922,8 @@ react-prop-types@^0.4.0:
   dependencies:
     prop-types "^15.5.8"
 
+=======
+>>>>>>> updated package.json and eslintrc
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/react-proxy/-/react-proxy-3.0.0-alpha.1.tgz#4400426bcfa80caa6724c7755695315209fa4b07"
@@ -5067,6 +5099,9 @@ redefine@^0.2.0:
   resolved "https://registry.yarnpkg.com/redefine/-/redefine-0.2.1.tgz#e89ee7a6f24d19fff62590569332dc60380a89a3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> updated package.json and eslintrc
 redis-commands@^1.2.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/redis-commands/-/redis-commands-1.3.1.tgz#81d826f45fa9c8b2011f4cd7a0fe597d241d442b"
@@ -5083,11 +5118,14 @@ redis@^2.1.0, redis@^2.8.0:
     redis-commands "^1.2.0"
     redis-parser "^2.6.0"
 
+<<<<<<< HEAD
 redux-thunk@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
 =======
+=======
+>>>>>>> updated package.json and eslintrc
 redux-thunk@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
@@ -5993,12 +6031,18 @@ uid-safe@~2.1.4:
     random-bytes "~1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> updated package.json and eslintrc
 uid2@0.0.x:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/uid2/-/uid2-0.0.3.tgz#483126e11774df2f71b8b639dcd799c376162b82"
 
+<<<<<<< HEAD
 =======
 >>>>>>> added LRUCache and re-configured server
+=======
+>>>>>>> updated package.json and eslintrc
 umzug@^1.12.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/umzug/-/umzug-1.12.0.tgz#a79c91f2862eee3130c6c347f2b90ad68a66e8b8"
@@ -6014,6 +6058,7 @@ unc-path-regex@^0.1.0:
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 unfetch@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-3.0.0.tgz#8d1e0513a4ecd0e5ff2d41a6ba77771aae8b6482"
@@ -6025,6 +6070,8 @@ uncontrollable@^4.1.0:
     invariant "^2.1.0"
 >>>>>>> added LRUCache and re-configured server
 
+=======
+>>>>>>> updated package.json and eslintrc
 unfetch@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-3.0.0.tgz#8d1e0513a4ecd0e5ff2d41a6ba77771aae8b6482"
@@ -6303,10 +6350,6 @@ xss-filters@1.2.7:
 y18n@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-
-yallist@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
 yallist@^2.1.2:
   version "2.1.2"
