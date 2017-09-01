@@ -6,7 +6,7 @@ logs
 tags.lock
 Session.vim
 tags.temp
-config/default.js
 yarn-error.log
-config/config.json
 .next
+config/development.json
+config/production.json

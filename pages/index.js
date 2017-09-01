@@ -1,7 +1,7 @@
 import { Provider } from "react-redux";
 import reducer from "../reducers/index";
 import { initStore } from "../reducers/index";
-import Nav from "../components/Nav";
+import Nav from "../components/nav";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 // import injectTapEventPlugin from "react-tap-event-plugin";

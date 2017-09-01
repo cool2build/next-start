@@ -1,5 +1,5 @@
-import bcrypt from 'bcryptjs';
-import crypto from 'crypto';
+const bcrypt = require('bcryptjs');
+const crypto = require('crypto');
 
 const instanceMethods = {
   getGravatarUrl: function(size) {
