@@ -1,4 +1,7 @@
+# node modules
 node_modules
+
+# log files
 npm-debug.log
 *.log
 logs
@@ -7,6 +10,10 @@ tags.lock
 Session.vim
 tags.temp
 yarn-error.log
+
+# build file
 .next
+
+# config
 config/development.json
 config/production.json
