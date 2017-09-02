@@ -18,6 +18,7 @@
     "express-session": "^1.15.5",
     "lodash": "^4.17.4",
     "next": "^3.2.1",
+    "nprogress": "^0.2.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "pg": "^7.2.0",

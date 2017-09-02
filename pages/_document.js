@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <title>No-line</title>
+          <link rel='stylesheet' type='text/css' href='/static/css/nprogress.css' />
           <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
         </Head>
         <body>

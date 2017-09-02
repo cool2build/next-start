@@ -1,5 +1,7 @@
 import Nav from '../nav/nav';
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import { Sidebar, Segment, Menu, Header } from 'semantic-ui-react';
 
 class Layout extends React.Component {
@@ -13,6 +15,15 @@ class Layout extends React.Component {
     this.handleLoading = this.handleLoading.bind(this);
     this.handleLoadingComplete = this.handleLoadingComplete.bind(this);
     this.toggleSidebar = this.toggleSidebar.bind(this);
+  }
+
+  componentDidMount() {
+    Router.onRouteChangeStart = url => {
+      console.log('loading url: ', url);
+      NProgress.start();
+    };
+    Router.onRouteChangeComplete = () => NProgress.done();
+    Router.onRouteChangeError = () => NProgress.done();
   }
 
   handleLoading() {
