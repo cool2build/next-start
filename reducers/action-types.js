@@ -7,11 +7,7 @@ function createConstants(values) {
 }
 
 function apiTypes(prefix) {
-  return [
-    prefix,
-    `${prefix}_SUCCESS`,
-    `${prefix}_FAIL`
-  ];
+  return [prefix, `${prefix}_SUCCESS`, `${prefix}_FAIL`];
 }
 
 export default createConstants([
@@ -19,5 +15,5 @@ export default createConstants([
   'INIT_AUTH',
   'SIGN_IN_ERROR',
   'SIGN_IN_SUCCESS',
-  'SIGN_OUT_SUCCESS',
+  'SIGN_OUT_SUCCESS'
 ]);

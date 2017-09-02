@@ -6,7 +6,6 @@ import { navStyle } from './navStyle';
 // import { getPrompts } from "../reducers/prompts";
 
 class Nav extends React.Component {
-
   constructor(props) {
     super(props);
   }
@@ -14,7 +13,9 @@ class Nav extends React.Component {
   render() {
     return (
       <Menu style={navStyle} inverted>
-        <Menu.Item position='left' onClick={this.props.toggleSidebar}>Menu</Menu.Item>
+        <Menu.Item position="left" onClick={this.props.toggleSidebar}>
+          Menu
+        </Menu.Item>
       </Menu>
     );
   }

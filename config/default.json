@@ -7,6 +7,13 @@
     "host": "localhost",
     "port": 5432
   },
+  "passport": {
+    "facebook": {
+      "clientID": "444516115942000",
+      "clientSecret": "e28adc1bf30fbbd385184d1ca56a08ef",
+      "callbackURL": "http://localhost:3000/auth/facebook/callback"
+    }
+  },
 
   "redis": {},
 

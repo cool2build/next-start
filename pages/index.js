@@ -3,7 +3,6 @@ import { initStore } from '../reducers/index';
 import reducer from '../reducers/index';
 import Layout from '../components/layout/layout';
 
-
 class Index extends React.Component {
   // static async getInitialProps({ req }) {
   //   const isServer = !!req;
@@ -22,9 +21,9 @@ class Index extends React.Component {
   render() {
     return (
       // <Provider store={this.store}>
-        <Layout>
-          <h3>Application Content</h3>
-        </Layout>
+      <Layout>
+        <h3>Application Content</h3>
+      </Layout>
       // </Provider>
     );
   }
