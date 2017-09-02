@@ -1,6 +1,5 @@
-import React from "react";
-import { Editor, Raw } from "slate";
-import { connect } from "react-redux";
+import { Editor, Raw } from 'slate';
+import { connect } from 'react-redux';
 import { Menu } from 'semantic-ui-react';
 import BurgerMenu from './burgerMenu/burgerMenu';
 import { navStyle } from './navStyle';
