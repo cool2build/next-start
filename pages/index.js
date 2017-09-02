@@ -3,6 +3,7 @@ import { initStore } from '../reducers/index';
 import reducer from '../reducers/index';
 import Layout from '../components/layout/layout';
 
+
 class Index extends React.Component {
   // static async getInitialProps({ req }) {
   //   const isServer = !!req;
