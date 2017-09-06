@@ -16,17 +16,17 @@
     "facebook": {
       "clientID": "FILLE_ME_IN",
       "clientSecret": "FILL_ME_IN",
-      "callbackURL": "FILL-ME-IN"
+      "callbackURL": "FILL_ME_IN"
     },
     "google": {
       "clientID": "FILLE_ME_IN",
       "clientSecret": "FILL_ME_IN",
-      "callbackURL": "FILL-ME-IN"
+      "callbackURL": "FILL_ME_IN"
     },
     "twitter": {
-      "clientID": "FILLE_ME_IN",
-      "clientSecret": "FILL_ME_IN",
-      "callbackURL": "FILL-ME-IN"
+      "consumerKey": "FILLE_ME_IN",
+      "consumerSecret": "FILL_ME_IN",
+      "callbackURL": "FILL_ME_IN"
     }
   }
 }

@@ -21,4 +21,10 @@ router.get('/google/callback', middleware.passport.authenticate('google', {
   failureRedirect: '/signin'
 }), (req, res) => res.redirect('/'));
 
+router.get('/twitter', middleware.passport.authenticate('twitter'));
+
+router.get('/twitter/callback', middleware.passport.authenticate('twitter', {
+  failureRedirect: '/signin'
+}), (req, res) => res.redirect('/'));
+
 module.exports = router;

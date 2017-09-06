@@ -24,8 +24,8 @@
       "callbackURL": "FILL_ME_IN"
     },
     "twitter": {
-      "clientID": "FILLE_ME_IN",
-      "clientSecret": "FILL_ME_IN",
+      "consumerKey": "FILLE_ME_IN",
+      "consumerSecret": "FILL_ME_IN",
       "callbackURL": "FILL_ME_IN"
     }
   }

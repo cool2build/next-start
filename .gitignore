@@ -16,6 +16,7 @@ dump.rdb
 .next
 
 # config
+config/config.json
 config/development.json
 config/production.json
 

@@ -21,11 +21,11 @@ module.exports = (db, DataTypes) => {
     email: {
       type: DataTypes.STRING,
       unique: true,
-      // allowNull: false,
       isEmail: true
     },
     facebook_profile_image: DataTypes.TEXT,
     google_profile_image: DataTypes.TEXT,
+    twitter_profile_image: DataTypes.TEXT,
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING
   });

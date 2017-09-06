@@ -1,6 +1,7 @@
 const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+const TwitterStategy = require('passport-twitter').Strategy;
 const { User } = require('../../models');
 const config = require('config')['passport'];
 const colors = require('colors');
@@ -44,7 +45,7 @@ passport.use(new FacebookStrategy({
           facebook_id: facebook_id,
           firstName: profile.name.givenName,
           lastName: profile.name.familyName,
-          facebook_profile_image: profile.photos[0].value,
+          facebook_profile_image: profile.photos[0].value
         });
       }
       done(null, user.dataValues);
@@ -79,13 +80,50 @@ passport.use(new GoogleStrategy({
           google_id: google_id,
           firstName: profile.name.givenName,
           lastName: profile.name.familyName,
-          google_profile_image: profile.photos[0].value,
+          google_profile_image: profile.photos[0].value
         });
       }
       done(null, user.dataValues);
     })
     .catch(err => {
       console.log('google oauth err: '.red, err);
+      done(err, false);
+    });
+}));
+
+passport.use(new TwitterStategy({
+  consumerKey: config.twitter.consumerKey,
+  consumerSecret: config.twitter.consumerSecret,
+  callbackURL: config.twitter.callbackURL,
+  includeEmail: true
+}, (token, tokenSecret, profile, done) => {
+  let email = profile.emails[0].value;
+  let twitter_id = profile.id;
+
+  User.findOne({
+    where: {
+      $or: [
+        { twitter_id },
+        { email }
+      ]
+    }
+  })
+    .then(async user => {
+      if (user && !user.dataValues.twitter_id) {
+        await user.update({ twitter_id });
+      } else if (!user) {
+        user = await User.create({
+          email: email,
+          twitter_id: twitter_id,
+          firstName: profile.name.givenName,
+          lastName: profile.name.familyName,
+          twitter_profile_image: profile.photos[0].value
+        });
+      }
+      done(null, user.dataValues);
+    })
+    .catch(err => {
+      console.log('twitter oauth err: '.red, err);
       done(err, false);
     });
 }));
